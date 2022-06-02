@@ -12,14 +12,5 @@ def read(path):
 
     return job_list
 
-read("src/jobs.csv")
-"""Reads a file from a given path and returns its contents.
-    Parameters
-    ----------
-    path : str
-        Full path to file
 
-    Returns
-    -------
-    list
-        List of rows as dicts"""
+read("src/jobs.csv")
