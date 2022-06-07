@@ -55,10 +55,8 @@ def matches_salary_range(job, salary):
         raise ValueError("min or max salary doesn't exist in dict")
     elif type(job["min_salary"] or job["max_salary"]) != int:
         raise ValueError("min_salary or max_salary is not a number")
-    elif job["min_salary"] > job["max_salary"]:
+    elif job["min_salary"] > job["max_salary"] or type(salary) != int:
         raise ValueError("min_salary can not be greater than max_salary")
-    elif type(salary) != int:
-        raise ValueError("salary is not a number")
     elif salary < job["min_salary"] or salary > job["max_salary"]:
         return False
 
