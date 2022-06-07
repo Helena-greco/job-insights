@@ -28,7 +28,6 @@ def filter_by_industry(jobs, industry):
     return list_filtered
 
 
-
 def get_max_salary(path):
     """Get the maximum salary of all jobs
 
